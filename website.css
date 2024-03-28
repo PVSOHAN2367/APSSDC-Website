@@ -1,0 +1,230 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ca511d; 
+    font-family: Arial, sans-serif;
+    font-size: 14px; 
+}
+
+header {
+    position: relative;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+
+.nav-links {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.nav-links nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links nav a {
+    color: #ef2626;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px 15px; 
+    background-color: #333; 
+    border-radius: 5px; 
+    transition: color 0.3s;
+}
+
+.nav-links nav a:first-child {
+    margin-left: 0; 
+}
+
+.nav-links nav a:hover {
+    color: #ffcc00; 
+}
+
+
+main {
+    padding: 20px;
+}
+
+
+section {
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: #66c072;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.container h2 {
+    color: #dfca63;
+}
+
+.container p {
+    color: #666;
+}
+.registration {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.registration h2 {
+    margin-bottom: 10px;
+}
+
+.registration form {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration label {
+    margin-bottom: 5px;
+}
+
+.registration input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.registration button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.registration button:hover {
+    background-color: #555;
+}
+
+.about-section {
+    background-color: #98c257; 
+    padding: 20px; 
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 10px; 
+}
+
+.social-icons a {
+    margin-right: 10px; 
+}
+
+.social-icons img {
+    width: 30px; 
+}
+
+.design{
+    text-align:center;
+    margin-right:50px;
+}
+
+.sliding-sentence {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.sliding-sentence span {
+    animation: slide 10s linear infinite;
+    display: inline-block;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    
+    body {
+        font-size: 12px;
+    }
+
+    .nav-links {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .nav-links nav {
+        justify-content: center;
+    }
+
+    .nav-links nav a {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    /* Adjust padding for main content */
+    main {
+        padding: 10px;
+    }
+
+    /* Adjust padding for registration form */
+    .registration {
+        padding: 10px;
+    }
+
+    /* Adjust padding for container */
+    .container {
+        padding: 15px;
+    }
+
+    /* Adjust padding for footer */
+    footer {
+        padding: 5px;
+    }
+}
+
+.sliding-sentence span {
+    animation: slide 10s linear infinite;
+    display: inline-block;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.foot {
+    text-align: right;
+    margin-right: 20px; 
+}
+
